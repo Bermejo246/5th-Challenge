@@ -1,16 +1,21 @@
 // Display Time
 
 var today = moment();
+
 $("#currentDay").text(today.format("MMM Do, YYYY"));
 
 
 // Change Background Color
 
+
 var timeActual = today.format("H");
+
 var timeCal = $("#blocks").text();
+
 var timeNumber = timeCal.replace(/\D/g,'');
 
 console.log(timeCal)
+
 console.log(timeNumber)
 
 
@@ -30,6 +35,7 @@ console.log(timeNumber)
 var taskInputEl = $('#formGroupExampleInput')
 
 function handleFormSubmit(event) {
+
     event.preventDefault();
 
 
@@ -37,6 +43,7 @@ function handleFormSubmit(event) {
     // printProjectData(task);
     
     $("btn btn-danger").addEventListener("click")
+
     localStorage.setItem(task);
 }
 
